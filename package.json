@@ -1,10 +1,11 @@
 {
-  "name": "MERN-boilerplate",
+  "name": "HUE-app",
   "version": "1.0.0",
-  "description": "Boilerplate for a full-stack MERN app",
+  "description": "Custom HUE app",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
+    "serve:dev": "nodemon --inspect server/index.js",
     "test": "jest",
     "start:dev": "webpack-dev-server",
     "react:dev": "webpack --watch",
@@ -36,7 +37,9 @@
   "dependencies": {
     "express": "^4.16.3",
     "jest": "^23.6.0",
+    "lodash": "^4.17.11",
     "mongoose": "^5.3.0",
+    "node-fetch": "^2.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
